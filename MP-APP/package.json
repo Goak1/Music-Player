@@ -1,0 +1,15 @@
+{
+  "name": "mp-app",
+  "version": "1.0.0",
+  "description": "\"This is a music player app created for a college assignment in 2025",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" , 
+    "start": "electron ."
+  },
+  "author": "Victor Dias & Breno Valle",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.1.4"
+  }
+}

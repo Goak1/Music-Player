@@ -1,0 +1,250 @@
+    
+#trackList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  
+  .track {
+    padding: 10px 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .track:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .track.active {
+    background-color: #e8354dda;
+    color: black;
+    font-weight: bold;
+  }
+
+.window-controls {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: #222;
+    -webkit-app-region: drag;
+  }
+  
+  .window-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+  }
+  
+  .window-controls button:hover {
+    color: rgb(255, 81, 0);
+  }
+
+.sections{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.playlist{
+    background-color: rgba(144, 164, 229, 0.064);
+    width: 300px;
+    height: 600px;
+    border-radius: 2%;
+    text-align: center;
+    overflow: auto;
+}
+
+.wave{  
+    background-color: rgba(144, 164, 229, 0.064);
+    width: 300px;
+    height: 600px;
+    border-radius: 2%;
+    text-align: center;
+    overflow: auto;
+    
+}
+.control{
+    background-image: linear-gradient(#ff085635, #180e071f);
+    background-color: rgba(144, 164, 229, 0.064);
+    width: 300px;
+    height: 600px;
+    border-radius: 2%;
+    text-align: center;
+
+}
+
+/* Playlist area */
+#tracks{
+    padding-top: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+
+#opnFolder{
+    background-image: linear-gradient(#EF0A59, #F08F60);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10vh;
+}
+
+
+
+
+
+/* All above are for the music page */
+
+#nav_back{
+    width: 15px;
+    -webkit-transform: scaleX(-1);
+    
+}
+
+.titleAuthor{
+    padding-top: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(231, 231, 231);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.picture{
+    transform: translateY(30px);
+    display: flex;
+    margin: auto;
+    width: 200px;
+    border-radius: 10%;
+}
+
+  /* Affects the buttons only */
+button{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+
+}
+
+button:hover{
+    filter: opacity(70%);
+}
+/* Affects the whole playback and volume buttons design */
+#controls {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.passSong{
+width: 19px;
+}
+
+/* Inside image */
+.playBtnImg{
+width: 20px;
+height: 20px;
+transform: translateX(1px);
+}
+/* Whole button */
+.playBtn {
+    position: relative;
+    width: 60px;
+    height: 55px; 
+    border-radius: 50%;
+    background-image: linear-gradient(#EF0A59, #F08F60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume{
+}
+
+.volumeImg{
+    width: 35px; 
+}
+.volumeBtn{
+     right: 100px;
+}
+
+.repeat_song{
+    width: 23px;
+}
+
+.container{
+background-color: #1d1923;
+border: 2px solid rgba(255, 127, 73, 0.443);
+padding: 10px;
+padding-bottom: 20px;
+padding-top: 20px;
+margin: auto;
+font-family: 'Arial Black', sans-serif; 
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+/* Changes the default bar in a customized one with different aspects */
+#bar{
+    -webkit-appearance: none;
+    width: 90%;
+    height: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+/* It is supossed to change the appearence of the little ball on the slide lol */
+#bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 3px solid #F08F60;
+    box-shadow: 0 2px 2px;
+}
+#volume-bar{
+    
+}
+#volume-bar::-webkit-slider-thumb{
+
+}
+
+.current-time,
+.duration-time{
+    font-size: 15px;
+
+}
+
+.time-display{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.duration-time{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.current-time{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+

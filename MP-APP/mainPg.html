@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- As the name says it will control the windows -->
+    <div class="window-controls" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+      <button class="min-btn">—</button>
+      <button class="max-btn">☐</button>
+      <button class="close-btn">✕</button>
+    </div>
+
+    <div class="container">
+
+        <div class="sections">
+            <div class="playlist">
+                Playlist
+                <div id="tracks">
+                  <div id="noTracksMessage">
+                    <h1>No tracks found!</h1>
+                    <p>Find the songs you like the most:</p>
+                  </div>
+                  <ul id="trackList"></ul>
+                  <div class="loadFolder">
+                    <button onclick="opnFolder()" id="opnFolder">Open Folder</button>
+                  </div>
+                </div>                
+            </div>
+
+            <div class="control">
+                <div class="music-player">
+                    <img src="Dummy stuff/fodase.jpg" class="picture">
+                    <div class="titleAuthor">
+                      <h1>Curtindo o Batidao</h1>
+                      <p>Minecraft ft.: caraioMC</p>
+                    </div>
+                  
+                    <audio id="song">
+                      <source src="Songs/shake-it-bololô-ft-classics-of-mpb.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="songSlider">
+                      <input type="range" value="0" id="bar"> 
+                      <div class="time-display">
+                        <span class="current-time">00:00</span>
+                        <span class="duration-time">00:00</span>
+                      </div>
+                      
+                    </div>
+                    
+                    <div id="controls">
+                      <button>
+                        <img src="Icons/" alt="">
+                      </button>
+                      <!-- Previous song -->
+                      <button>
+                        <img src="Icons/previousTrack.png" alt="next" class="passSong">
+                      </button>
+                      <!-- Play/pause -->
+                      <button class="playBtn" onclick="playPause()">
+                            <img src="Icons/play-icon.png" alt="play" id="playPauseImg" class="playBtnImg">  
+                      </button>
+                      <!-- Next Track -->
+                      <button>
+                        <img src="Icons/nextSong.PNG" alt="next" class="passSong">
+                      </button>
+                      <!-- Repeat (current song or playlist) -->
+                      <button>
+                        <img src="Icons/repeat_song.PNG" alt="" class="repeat_song">
+                      </button>
+                    </div>
+
+                    <!-- Volume -->
+                    <!-- <div class="volume">
+                      <button class="volumeBtn">
+                        <img src="Icons/volume-icon.PNG" alt="next" class="volumeImg">
+                        </button>
+                        <input type="range" value="" id="volume-bar">
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="wave">
+                <!-- This part was supposed to be a spectrum analyzer, but I didnt have time to learn how to code this :( -->
+                <!-- Also i used chatGPT just to see how it would look like, but I wont use it because I will have no idea how to explain how it works -->
+                <canvas id="spectrumCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

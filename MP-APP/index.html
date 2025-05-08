@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    
+  <div class="app">
+      <!-- Background (Black) -->
+    <div class="container">
+      <nav id="nav">
+        <button style="transform: translate(10px, -20px);" onclick="returnPg();">
+          <img src="Icons/back_icon_nav.PNG" alt="" id="nav_back">
+        </button>
+      </nav>
+
+      <!-- The whole music player system (sliders, etc) -->
+      <div class="music-player">
+        <img src="Dummy stuff/fodase.jpg" class="picture">
+        <div class="titleAuthor">
+          <h1>Curtindo o Batidao</h1>
+          <p>Minecraft ft.: caraioMC</p>
+        </div>
+      
+        <audio id="song">
+          <source src="Songs/shake-it-bololô-ft-classics-of-mpb.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="songSlider">
+          <input type="range" value="0" id="bar"> 
+          <span class="current-time">00:00</span>
+          <span class="duration-time">00:00</span>
+        </div>
+        
+        <div class="controls">
+          <button>
+            <img src="Icons/" alt="">
+          </button>
+          <!-- Previous song -->
+          <button>
+            <img src="Icons/previousTrack.png" alt="next" class="passSong">
+          </button>
+          <!-- Play/pause -->
+          <button class="playBtn" onclick="playPause()">
+                <img src="Icons/play-icon.png" alt="play" id="playPauseImg" class="playBtnImg">  
+          </button>
+          <!-- Next Track -->
+          <button>
+            <img src="Icons/nextSong.PNG" alt="next" class="passSong">
+          </button>
+          <!-- Repeat (current song or playlist) -->
+          <button>
+            <img src="Icons/repeat_song.PNG" alt="" class="repeat_song">
+          </button>
+        </div>
+        <!-- Volume -->
+        <div class="volume">
+          <button class="volumeBtn">
+            <img src="Icons/volume-icon.PNG" alt="next" class="volumeImg">
+            </button>
+            <input type="range" value="" id="volume-bar">
+        </div>
+        
+        
+        
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
